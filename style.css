@@ -1,0 +1,1288 @@
+/*
+Theme Name: Podcaster
+Theme URI: http://launchapod.com
+Author: Terry Nichols / Ron Davis
+Author URI: http://launchapod
+Description: Simple Podcasting Wordpress Theme
+Version: 0.4.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/*=========================
+  Fonts
+ ================= */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333333;
+}
+
+h1.title {
+    text-align: center;
+    font-size: 60px;
+}
+
+a {
+    color: #484848;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #1e73be;
+    text-decoration: none;
+}
+
+.podcaster-site-title a {
+    color: #ffffff;
+}
+
+p.site-description {
+    color: #ffffff;
+}
+
+.sidebar-module h4 {
+    font-size: 23px;
+}
+
+.sidebar-module li {
+    font-size: 15px;
+}
+
+body p {
+    font-size: 16px;
+}
+
+.footer.blog-footer p {
+    color: #fff;
+}
+
+p.footer-copyright {
+    color: #fff;
+}
+
+h2.podcaster-site-title {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    margin: 0px;
+} 
+
+p.site-description {
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.latest-posts {
+    text-align: center;
+}
+
+div#latest-post-left {
+    padding-bottom: 20px;
+}
+
+p.tag-taxonomy {
+    font-weight: bold;
+}
+
+div.latest-post-excerpt p {
+    font-size: 18px;
+}
+
+/*=========================
+  Main Structure
+ ================= */
+
+iframe {
+    max-height: 90px;
+}
+
+.error-image img {
+    display: block;
+    margin: auto;
+}
+
+.latest-posts {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #25292c;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.latest-posts h2 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+div#cta-section {
+    padding: 20px 20px;
+}
+
+div#sub-box-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div#latest-post-center {
+}
+
+.section-author {
+    margin-top: 34px; 
+    margin-bottom: -30px;
+}
+
+div#pod {
+    padding-bottom: 30px;
+}
+
+div#latest-post-left img {
+    width: 100%;
+    height: auto;
+}
+
+div#recent-posts-container {
+    margin-bottom: 10px;
+}
+
+div#top-bar-container {
+    width: 100%;
+    background: #484848;
+}
+
+section#front-page-posts {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+div#showcase-container {
+    padding: 0;
+    width: 100%;
+    background-color: #484848;
+}
+
+div#full-width-container {
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+}
+
+div#error-message {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.testimonial-title {
+    margin-top: 46px;
+}
+
+.testimonial-wrap {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.client_name {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+img.client-photo {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+}
+
+section#testimonials-posts {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*=========================
+  Main Column Sidebar Layout
+ ================= */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 20px 0px 0px 0px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+/*=========================
+  Blog Posts
+ ================= */
+
+.the-title {
+    padding-bottom: 30px;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #dedede;
+}
+
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+.podcaster-archive {
+    padding-top: 45px;
+}
+
+.podcaster-single {
+    margin-top: 13px;
+}
+
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 13px;
+}
+
+.post-thumb {
+    padding-bottom: 10px;
+}
+
+/*=========================
+  Standard WP Image class css
+ ========================== */
+
+img.alignright { 
+    float: right; 
+    margin: 0 0 1em 1em; 
+}
+
+img.alignleft { 
+    float: left; 
+    margin: 0 1em 1em 0; 
+}
+
+img.aligncenter { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.alignright { 
+    float: right; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignleft { 
+    float: left; 
+}
+
+.aligncenter { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/*=========================
+  Bottom Footer (copyright)
+ ================= */
+
+.blog-footer {
+  padding: 10px 0;
+  color: #ffffff;
+  text-align: center;
+  background-color: #484848;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*=========================
+  Custom Styles
+ ================= */
+
+p.tag-taxonomy a {
+    color: #ffffff;
+    padding: 5px 10px;
+    background-color: #1e73be;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+p.tag-taxonomy a:hover {
+    color: #1e73be;
+    padding: 4px 9px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #1e73be;
+}
+
+div#sub-box-content.col-xs-3 a img {
+      -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+div#sub-box-content.col-xs-3 a img:hover {
+  -webkit-filter: grayscale(100%);
+}
+
+ .showcase{
+   height:600px;
+   padding: 120px 20px;
+   text-align: center;
+   color:#ffffff;
+ }
+
+ .showcase h1{
+   font-size: 55px;
+   padding-bottom:20px;
+   color:#fff;
+ }
+
+ .showcase p {
+   font-size:20px;
+   margin-bottom:50px;
+ }
+
+ .boxes{
+   text-align: center;
+   margin-bottom: 30px;
+   margin-top: 30px;
+ }
+
+ .boxes3 img{
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+ }
+
+section.sub-boxes3 {
+    display: block;
+    text-align: center;
+}
+
+section.sub-boxes3 img {
+    text-align: center;
+    max-height: 200px;
+	border-radius: 25px;
+}
+
+section.boxes3 {
+    padding-top: 40px;
+}
+
+ .boxes2 img{
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: 85%;
+    max-height: 100%;
+ }
+
+section.boxes2 {
+    padding-top: 20px;
+}
+
+section.boxes1 {
+    padding-top: 40px;
+}
+
+  div#sub-box-content img {
+    max-height: 150px;
+    max-width: 150px;
+    width: 100%;
+}
+
+ .box .fa{
+   font-size:45px !important;
+   margin-bottom:10px;
+ }
+
+.boxes div.container div.row-fluid div.col-xs-4{
+    padding:0;
+}
+
+ .post-thumb img{
+   width:100%;
+   height:auto;
+   margin-bottom:8px;
+ }
+
+.comments{
+  border:1px #ccc solid;
+  padding:10px;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+
+.comments h3,.comments h2{
+  background:#ffffff;
+  color:#484848;
+  padding:5px;
+}
+
+.comment-body{
+  border:#ccc solid 1px;
+  margin-bottom:10px;
+  padding:20px 10px;
+}
+
+.comment-meta{
+  background:#428bca;
+  color:#ffffff;
+  padding:10px;
+  overflow:auto;
+}
+
+.comment-meta a{
+  color:#ffffff;
+}
+
+.comment-meta img{
+  float:left;
+  margin-right:10px;
+}
+
+.comment-reply-link{
+  background:#428bca;
+  color:#ffffff;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.comment-form input, .comment-form textarea{
+  width:100%;
+  padding:4px;
+  border:#ccc solid 1px;
+  margin-bottom:15px;
+}
+
+.post-gallery{
+  background:#333333;
+  color:#ffffff;
+  padding:10px;
+  text-align: center;
+}
+
+.post-gallery h2{
+  color:#ffffff;
+}
+
+/*=========================
+  Custom Overrides
+ ================= */
+
+input.search-submit {
+    background-color: #1e73be;
+    color: #ffffff;
+    border: none;
+    padding: 3px 10px 3px 10px;
+    min-width: 100px;
+}
+
+input.search-field {
+    min-height: 27px;
+    width: 100%;
+}
+
+span.screen-reader-text {
+    display: none;
+}
+
+textarea#comment {
+    max-width: 100%;
+}
+
+.clear {
+    padding: 20px;
+}
+
+input#submit {
+    background-color: #1e73be;
+    color: #ffffff;
+    width: 30%;
+    float: right;
+}
+
+input#submit:hover {
+    background-color: #ffffff;
+    color: #1e73be;
+    width: 30%;
+    float: right;
+}
+
+.comments {
+    border: 1px #efefef solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 60px;
+}
+
+.page-title {
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+.blog-footer a {
+    color: #ffffff;
+}
+
+.blog-footer a:hover {
+    color: #1e73be;
+}
+
+blockquote {
+    border-left: 5px solid #1e73be;
+}
+
+/*=========================
+  Pagination
+ ================= */
+
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.col-sm-3.col-sm-offset-1.blog-sidebar {
+    margin-bottom: 35px;
+}
+
+.podcaster-pagination {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+a.page-numbers {
+    border: 2px solid #484848;
+    padding: 5px 10px;
+    background-color: #333333;
+    color: #fff;
+}
+
+span.page-numbers.current {
+    border: 2px solid #1e73be;
+    padding: 5px 10px;
+    background-color: #1e73be;
+    color: #ffffff;
+}
+
+a.next.page-numbers:hover {
+    background-color: #1e73be;
+    border: 2px solid #1e73be;
+    color: #fff;
+}
+
+a.previous.page-numbers:hover {
+    background-color: #1e73be;
+    border: 2px solid #1e73be;
+    color: #fff;
+}
+
+a.page-numbers:hover {
+    padding: 5px 10px;
+    background-color: #1e73be;
+    border: 2px solid #1e73be;
+    color: #fff;
+}
+
+/*=========================
+  Buttons & Links
+ ================= */
+
+.btn {
+    border: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1e73be;
+    border-color: #1e73be;
+    transition: color 0.2s;
+}
+
+.btn-primary:hover {
+    color: #1e73be;
+    background-color: #fff;
+}
+
+/*=========================
+  Breadcrumbs
+ ================= */
+
+#breadcrumbs{
+    list-style:none;
+    overflow:hidden;
+    font-size: 11px;
+}
+  
+#breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:8px;
+}
+  
+#breadcrumbs .separator{
+    font-size:14px;
+    font-weight:100;
+    color:#ccc;
+}
+
+ul#breadcrumbs {
+    padding-left: 2px;
+    margin-top: 2px;
+    float: right;
+}
+
+.breadcrumb-single {
+    float: right;
+}
+
+@media screen and (max-width: 768px){
+    .podcaster-single {
+    margin-top: 40px;
+    }
+}
+
+/*=========================
+  Post with Thumbnails Plugin Overrides
+ ================= */
+
+.rpwwt-post-author {
+    font-size: 12px;
+}
+
+.rpwwt-post-date {
+    font-size: 12px;
+}
+
+/*=========================
+  Footer Widget Area
+ ================= */
+
+div#widget-area span.rpwwt-post-title {
+    color: #fff;
+}
+
+div#widget-area a:hover {
+    color: #dadbec;
+}
+
+div#widget-area a {
+    color: #ffffff;
+}
+
+
+div#widget-area h3.widget-title {
+    color: #ffffff;
+}
+
+div#widget-area {
+    padding-bottom: 30px;
+}
+
+footer { 
+    background-color:#565656; 
+    min-height:200px;
+}
+
+.footerleft { 
+    margin-top:50px; 
+    padding:0 36px; 
+}
+
+.logofooter { 
+    margin-bottom:10px; 
+    font-size:25px; 
+    color:#fff; 
+    font-weight:700;
+}
+
+.footerleft p { 
+    color:#fff; 
+    font-size:12px !important; 
+    margin-bottom:15px;
+}
+
+.footerleft p i { 
+    width:20px; 
+    color:#999;
+}
+
+.paddingtop-bottom {  
+    margin-top:50px;
+}
+
+.footer-ul { 
+    list-style-type:none;  
+    padding-left:0px; 
+    margin-left:2px;
+}
+
+.footer-ul li { 
+    line-height:29px; 
+    font-size:12px;
+}
+
+.footer-ul li a { 
+    color:#a0a3a4; 
+    transition: color 0.2s linear 0s, background 0.2s linear 0s; 
+}
+
+.footer-ul i { 
+    margin-right:10px;
+}
+
+.footer-ul li a:hover {
+    transition: color 0.2s linear 0s, background 0.2s linear 0s; 
+    color:#1e73be; 
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+
+ .icon-ul { 
+     list-style-type:none !important; 
+     margin:0px; padding:0px;
+}
+
+ .icon-ul li { 
+     line-height:75px; 
+     width:100%; float:left;
+}
+
+ .icon { 
+     float:left; 
+     margin-right:5px;
+}
+ 
+ .copyright { 
+     min-height:40px; 
+     background-color:#000000;
+}
+ .copyright p { 
+     text-align:left; 
+     color:#ffffff; 
+     padding:10px 0; 
+     margin-bottom:0px;
+}
+ .heading7 { 
+     font-size:21px; 
+     font-weight:700; 
+     color:#d9d6d6; 
+     margin-bottom:22px;
+}
+
+ .post p { 
+     font-size:12px; 
+     color:#FFF; 
+     line-height:20px;
+}
+
+ .post p span { 
+     display:block; 
+     color:#8f8f8f;
+}
+
+ .bottom_ul { 
+     list-style-type:none; 
+     float:right; 
+     margin-bottom:0px;
+}
+
+ .bottom_ul li { 
+     float:left; 
+     line-height:40px;
+}
+
+ .bottom_ul li:after { 
+     content:"/"; 
+     color:#ffffff; 
+     margin-right:8px; 
+     margin-left:8px;
+}
+ .bottom_ul li a { 
+     color:#ffffff;  
+     font-size:12px;
+}
+
+/*=========================
+  Icons
+ ================= */
+
+.social-footer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.blog-footer ul.social-network {
+    float: none;  
+}
+
+div.blog-footer .social-circle a {
+    background-color: #ffffff;
+}
+
+div.blog-footer .social-circle i {
+    color: #484848;
+}
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+    float: right;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0;
+}
+
+ul, ol .social-network {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+
+.social-network a.icoYouTube:hover {
+	background-color:#BD3518;
+}
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i,
+.social-network a.icoYouTube:hover i
+ {
+	color:#fff;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 30px;
+	height: 30px;
+	font-size:14px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:30px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-circle a {
+ background-color: #484848;   
+}
+
+.social-circle ul {
+    margin-bottom: 0;
+}
+
+.social-circle ul, ol {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* ----------------------------
+* Callouts
+* ----------------------------
+*/
+
+.callout-light {
+    padding: 30px 0px 20px 0px;
+	color: #000;
+	background-color: #ccc;
+    margin-top: 24px;
+}
+
+.callout-light h1,
+h2,
+h3,
+h4 {
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+a.btn.btn-primary {
+    font-size: 20px;
+    padding: 8px 15px;
+}
+
+/* ----------------------------
+* Nav Bar and Branding
+* ----------------------------
+*/
+
+.navbar-brand {
+    float: left;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+img.custom-logo {
+
+
+}
+@media (min-width: 768px)
+.navbar {
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 992px){
+    img.custom-logo {
+/* 
+        width: 190px;
+        height: 25px;
+        margin-top: 12px;
+ */
+    }
+    a.navbar-brand {
+        padding-left: 0;
+    }
+}
+
+.navbar-toggle {
+    margin-right: 0px;
+}
+
+.header-wrap {
+    background-color: #484848;
+    height: 100px;
+}
+
+.blog-nav a{
+   color:#ffffff;
+}
+
+.blog-nav a:hover{
+   color:#666666;
+}
+
+
+.navbar-inverse {
+    background-color: #484848;
+    border-color: rgba(8, 8, 8, 0);
+}
+
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
+
+.navbar {
+    border: 0px;
+    margin-bottom: 0px;
+}
+
+.nav > li:hover {
+    color: #fff;
+    background-color: #1e73be;
+    transition: background 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown-menu {
+        position: relative;
+        min-width: 128px;
+    }
+    .navbar {
+        max-height: 150px;
+    }
+    .navbar-collapse {
+        padding-right: 0;
+    }
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #156bc6;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #1e73be;
+    color: #ffffff;
+}
+
+.blog-nav .active {
+    color: #1e73be;
+}
+
+nav.blog-nav {
+    float: right;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #1e73be;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #1e73be;
+}
+
+.navbar-nav.navbar-right .btn { 
+    position: relative; 
+    z-index: 2; 
+    padding: 4px 20px; 
+    margin: 10px auto; 
+    transition: transform 0.3s; 
+}
+
+.navbar .navbar-collapse { 
+    position: relative;
+    overflow: hidden !important; 
+}
+
+.navbar .navbar-collapse .navbar-right > li:last-child { 
+    padding-left: 22px;
+}
+
+.navbar .nav-collapse { 
+    position: absolute; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: 0; 
+    padding-right: 120px; 
+    padding-left: 80px; 
+    width: 100%; 
+}
+
+.navbar.navbar-inverse .nav-collapse { 
+    background-color: #222; 
+}
+
+.navbar .nav-collapse .navbar-form { 
+    border-width: 0; 
+    box-shadow: none; 
+}
+
+.nav-collapse>li { 
+    float: right; 
+}
+
+.btn.btn-circle { 
+    border-radius: 50px; 
+}
+
+.btn.btn-outline { 
+    background-color: transparent; 
+}
+
+/* ----------------------------
+* Blog Boxed Content
+* ----------------------------
+*/
+
+div#archive {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a.more-btn:hover {
+    background-color: #ffffff;
+    border: 1px solid #1874ba;
+}
+div.single-blog-item img {
+    width: 100%;
+    height: auto;
+}
+
+.single-blog-item {
+  border: 1px solid #dfdede;
+  /*box-shadow: 2px 5px 10px #dfdede;*/
+  margin: 15px auto;
+  padding: 8px;
+  position: relative;
+
+}
+
+@media screen and (min-width: 1200px ){
+    .single-blog-item {
+          min-height: 360px;
+    }
+    .blog-thumnail {
+        min-height: 332px;
+    }
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  min-height: 66px;
+}
+
+.blog-content h4 a {
+	color:#777;
+}
+
+.blog-content p {
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.3333;
+}
+
+.blog-date {
+}
+
+.blog-date {
+    position: absolute;
+    background: #337ab7;
+    top: 35px;
+    left: 5px;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    padding: 5px 15px;
+    font-weight: 700;
+}
+
+.more-btn {
+  background: #337ab7;
+  border-radius: 2px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin: 30px auto auto auto;
+  text-align: center;
+  width: 110px;
+  color: #f1f1f1;
+}
+
+/* ----------------------------
+* Dark Theme Styling
+* ----------------------------
+*/
+
+// set all links to red
+.color_option_one body {
+	color: #000000;
+}
+
+// set all links to blue
+.color-option-two a {
+	color: #0000ff;
+}

@@ -1,2 +1,3 @@
-# podcaster
-This is the repository for the Podcaster WordPress theme
+# README #
+
+This is the respository for the Podcaster Theme.
