@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div class="row">
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-12 blog-main">
             <div class="podcaster-single">
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post(); ?>
@@ -11,8 +11,9 @@
                 <?php endif; ?>
             </div><!-- /.blog-main -->
         </div>
+    </div>
+</div>
 
-<?php get_sidebar(); ?>
         
     <div class="latest-posts">
         <style>
