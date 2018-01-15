@@ -416,7 +416,7 @@ function upgrader_source_selection_filter($source, $remote_source=NULL, $upgrade
 	if(isset($source, $remote_source, $upgrader->skin->theme)){
 		$corrected_source = $remote_source . '/' . $upgrader->skin->theme . '/';
 		if(@rename($source, $corrected_source)){
-			return $corrected_source;
+      return $corrected_source;
 		} else {
 			$upgrader->skin->feedback("Unable to rename downloaded theme.");
 			return new WP_Error();
