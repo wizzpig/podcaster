@@ -5,7 +5,7 @@ Github Theme URI: https://github.com/wizzpig/podcaster
 Author: Terry Nichols / Ron Davis
 Author URI: https://www.launchapod.com
 Description: Simple Podcasting Wordpress Theme
-Version: 0.5.4
+Version: 0.5.5
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -81,7 +81,7 @@ h2.podcaster-site-title {
     vertical-align: middle;
     padding-left: 20px;
     margin: 0px;
-} 
+}
 
 p.site-description {
     color: #ffffff;
@@ -147,7 +147,7 @@ div#latest-post-center {
 }
 
 .section-author {
-    margin-top: 34px; 
+    margin-top: 34px;
     margin-bottom: -30px;
 }
 
@@ -283,24 +283,24 @@ section#testimonials-posts {
   Standard WP Image class css
  ========================== */
 
-img.alignright { 
-    float: right; 
-    margin: 0 0 1em 1em; 
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
 }
 
-img.alignleft { 
-    float: left; 
-    margin: 0 1em 1em 0; 
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
 }
 
-img.aligncenter { 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.alignright { 
-    float: right; 
+.alignright {
+    float: right;
 }
 
 img {
@@ -308,14 +308,14 @@ img {
     height: auto;
 }
 
-.alignleft { 
-    float: left; 
+.alignleft {
+    float: left;
 }
 
-.aligncenter { 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*=========================
@@ -669,13 +669,13 @@ a.page-numbers:hover {
     overflow:hidden;
     font-size: 11px;
 }
-  
+
 #breadcrumbs li{
     display:inline-block;
     vertical-align:middle;
     margin-right:8px;
 }
-  
+
 #breadcrumbs .separator{
     font-size:14px;
     font-weight:100;
@@ -735,61 +735,61 @@ div#widget-area {
     padding-bottom: 30px;
 }
 
-footer { 
-    background-color:#565656; 
+footer {
+    background-color:#565656;
     min-height:200px;
 }
 
-.footerleft { 
-    margin-top:50px; 
-    padding:0 36px; 
+.footerleft {
+    margin-top:50px;
+    padding:0 36px;
 }
 
-.logofooter { 
-    margin-bottom:10px; 
-    font-size:25px; 
-    color:#fff; 
+.logofooter {
+    margin-bottom:10px;
+    font-size:25px;
+    color:#fff;
     font-weight:700;
 }
 
-.footerleft p { 
-    color:#fff; 
-    font-size:12px !important; 
+.footerleft p {
+    color:#fff;
+    font-size:12px !important;
     margin-bottom:15px;
 }
 
-.footerleft p i { 
-    width:20px; 
+.footerleft p i {
+    width:20px;
     color:#999;
 }
 
-.paddingtop-bottom {  
+.paddingtop-bottom {
     margin-top:50px;
 }
 
-.footer-ul { 
-    list-style-type:none;  
-    padding-left:0px; 
+.footer-ul {
+    list-style-type:none;
+    padding-left:0px;
     margin-left:2px;
 }
 
-.footer-ul li { 
-    line-height:29px; 
+.footer-ul li {
+    line-height:29px;
     font-size:12px;
 }
 
-.footer-ul li a { 
-    color:#a0a3a4; 
-    transition: color 0.2s linear 0s, background 0.2s linear 0s; 
+.footer-ul li a {
+    color:#a0a3a4;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
 }
 
-.footer-ul i { 
+.footer-ul i {
     margin-right:10px;
 }
 
 .footer-ul li a:hover {
-    transition: color 0.2s linear 0s, background 0.2s linear 0s; 
-    color:#1e73be; 
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    color:#1e73be;
 }
 
 .social:hover {
@@ -798,68 +798,68 @@ footer {
      -o-transform: scale(1.1);
  }
 
- .icon-ul { 
-     list-style-type:none !important; 
+ .icon-ul {
+     list-style-type:none !important;
      margin:0px; padding:0px;
 }
 
- .icon-ul li { 
-     line-height:75px; 
+ .icon-ul li {
+     line-height:75px;
      width:100%; float:left;
 }
 
- .icon { 
-     float:left; 
+ .icon {
+     float:left;
      margin-right:5px;
 }
- 
- .copyright { 
-     min-height:40px; 
+
+ .copyright {
+     min-height:40px;
      background-color:#000000;
 }
- .copyright p { 
-     text-align:left; 
-     color:#ffffff; 
-     padding:10px 0; 
+ .copyright p {
+     text-align:left;
+     color:#ffffff;
+     padding:10px 0;
      margin-bottom:0px;
 }
- .heading7 { 
-     font-size:21px; 
-     font-weight:700; 
-     color:#d9d6d6; 
+ .heading7 {
+     font-size:21px;
+     font-weight:700;
+     color:#d9d6d6;
      margin-bottom:22px;
 }
 
- .post p { 
-     font-size:12px; 
-     color:#FFF; 
+ .post p {
+     font-size:12px;
+     color:#FFF;
      line-height:20px;
 }
 
- .post p span { 
-     display:block; 
+ .post p span {
+     display:block;
      color:#8f8f8f;
 }
 
- .bottom_ul { 
-     list-style-type:none; 
-     float:right; 
+ .bottom_ul {
+     list-style-type:none;
+     float:right;
      margin-bottom:0px;
 }
 
- .bottom_ul li { 
-     float:left; 
+ .bottom_ul li {
+     float:left;
      line-height:40px;
 }
 
- .bottom_ul li:after { 
-     content:"/"; 
-     color:#ffffff; 
-     margin-right:8px; 
+ .bottom_ul li:after {
+     content:"/";
+     color:#ffffff;
+     margin-right:8px;
      margin-left:8px;
 }
- .bottom_ul li a { 
-     color:#ffffff;  
+ .bottom_ul li a {
+     color:#ffffff;
      font-size:12px;
 }
 
@@ -873,7 +873,7 @@ footer {
 }
 
 div.blog-footer ul.social-network {
-    float: none;  
+    float: none;
 }
 
 div.blog-footer .social-circle a {
@@ -980,7 +980,7 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 .social-circle a {
- background-color: #484848;   
+ background-color: #484848;
 }
 
 .social-circle ul {
@@ -1040,7 +1040,7 @@ img.custom-logo {
 
 @media screen and (max-width: 992px){
     img.custom-logo {
-/* 
+/*
         width: 190px;
         height: 25px;
         margin-top: 12px;
@@ -1137,55 +1137,55 @@ nav.blog-nav {
     background-color: #1e73be;
 }
 
-.navbar-nav.navbar-right .btn { 
-    position: relative; 
-    z-index: 2; 
-    padding: 4px 20px; 
-    margin: 10px auto; 
-    transition: transform 0.3s; 
-}
-
-.navbar .navbar-collapse { 
+.navbar-nav.navbar-right .btn {
     position: relative;
-    overflow: hidden !important; 
+    z-index: 2;
+    padding: 4px 20px;
+    margin: 10px auto;
+    transition: transform 0.3s;
 }
 
-.navbar .navbar-collapse .navbar-right > li:last-child { 
+.navbar .navbar-collapse {
+    position: relative;
+    overflow: hidden !important;
+}
+
+.navbar .navbar-collapse .navbar-right > li:last-child {
     padding-left: 22px;
 }
 
-.navbar .nav-collapse { 
-    position: absolute; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: 0; 
-    padding-right: 120px; 
-    padding-left: 80px; 
-    width: 100%; 
+.navbar .nav-collapse {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding-right: 120px;
+    padding-left: 80px;
+    width: 100%;
 }
 
-.navbar.navbar-inverse .nav-collapse { 
-    background-color: #222; 
+.navbar.navbar-inverse .nav-collapse {
+    background-color: #222;
 }
 
-.navbar .nav-collapse .navbar-form { 
-    border-width: 0; 
-    box-shadow: none; 
+.navbar .nav-collapse .navbar-form {
+    border-width: 0;
+    box-shadow: none;
 }
 
-.nav-collapse>li { 
-    float: right; 
+.nav-collapse>li {
+    float: right;
 }
 
-.btn.btn-circle { 
-    border-radius: 50px; 
+.btn.btn-circle {
+    border-radius: 50px;
 }
 
-.btn.btn-outline { 
-    background-color: transparent; 
+.btn.btn-outline {
+    background-color: transparent;
 }
 
 /* ----------------------------
