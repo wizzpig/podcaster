@@ -406,15 +406,16 @@ function transient_update_themes_filter($data){
 
 	return $data;
 }
+
 add_filter('upgrader_source_selection', 'upgrader_source_selection_filter', 10, 3);
 function upgrader_source_selection_filter($source, $remote_source=NULL, $upgrader=NULL){
 	/*
 		Github delivers zip files as <Username>-<TagName>-<Hash>.zip
 		must rename this zip file to the accurate theme folder
 	*/
-  error_log("Source: ".$source." remote source:".$remote_source." theme:".$upgrader->skin->theme);
-	if(isset($source, $remote_source, $upgrader->skin->theme)){
-		$corrected_source = $remote_source . '/' . $upgrader->skin->theme . '/';
+  $theme_name = $upgrader->skin->theme_info->template;
+	if(isset($source, $remote_source, $theme_name)){
+		$corrected_source = $remote_source . '/' . $theme_name . '/';
 		if(@rename($source, $corrected_source)){
       return $corrected_source;
 		} else {
@@ -424,6 +425,7 @@ function upgrader_source_selection_filter($source, $remote_source=NULL, $upgrade
 	}
 	return $source;
 }
+
 /*
    Function to address the issue that users in a standalone WordPress installation
    were receiving SSL errors and were unable to install themes.
