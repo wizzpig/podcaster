@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-Archive.php
-
     <div id="archive" class="row">
         <div class="container">
             <h1>Category: <?php the_category(', '); ?></h1>
