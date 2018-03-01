@@ -11,15 +11,10 @@ function the_breadcrumb() {
 	
 	// Start the breadcrumb with a link to your homepage
         echo '<div class="breadcrumbs">';
-        echo '<a href="';
-        echo get_option('home');
-        echo '">';
-        bloginfo('name');
-        echo '</a>' . $sep;
 	
 	// Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_single() ){
-            the_category('title_li=');
+            the_category($sep);
         } elseif (is_archive() || is_single()){
             if ( is_day() ) {
                 printf( __( '%s', 'text_domain' ), get_the_date() );
